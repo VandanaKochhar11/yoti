@@ -3,6 +3,8 @@
 <link href="@getyoti/react-face-capture/vanilla/index.css" />
 </head>
 <body>
+  <div id="face-capture-module-root"></div>
+  <script src="@getyoti/react-face-capture/vanilla/index.js" ></script>
   <script>
     const props = {
       faceCaptureAssetsRootUrl: '@getyoti/react-face-capture/vanilla/assets/'
@@ -17,7 +19,5 @@
           fcm.unmount()
     }
   </script>
-  <div id="face-capture-module-root"></div>
-  <script src="@getyoti/react-face-capture/vanilla/index.js" ></script>
 </body>
 </html>
