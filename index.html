@@ -1,8 +1,10 @@
+<html>
+<head>
 <link href="@getyoti/react-face-capture/vanilla/index.css" />
-<script src="@getyoti/react-face-capture/vanilla/index.js" />
+<script src="@getyoti/react-face-capture/vanilla/index.js" ></script>
 <script>
   const props = {
-    faceCaptureAssetsRootUrl: '@getyoti/react-face-capture/vanilla/assets/';
+    faceCaptureAssetsRootUrl: '@getyoti/react-face-capture/vanilla/assets/'
   };
 
   const fcm = Yoti.FaceCaptureModule.render(props, document.getElementById('face-capture-module-root'));
@@ -15,5 +17,8 @@
         fcm.unmount()
   }
 </script>
-
-<div id="face-capture-module-root"></div>
+</head>
+<body>
+  <div id="face-capture-module-root"></div>
+</body>
+</html>
